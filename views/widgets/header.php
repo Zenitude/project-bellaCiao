@@ -1,9 +1,9 @@
 <header>
 
     <nav>
+        <a href="index.php"><img src="publics/resources/images/logo.png" alt=""></a>
 
         <ul>
-            <li><a href="index.php"><img src="publics/resources/images/logo.png" alt=""></a></li>
             <li><a href="index.php?page=home">Accueil</a></li>
 
             <?php if(!isset($_SESSION['nameUser'])): ?>

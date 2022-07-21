@@ -6,8 +6,10 @@
     <meta name="description" content="Conception et la maintenance de logiciel pour banque, assurances, gestion commerciale, administrations, transport maritime et aérien">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="publics/resources/images/logo.png">
 
     <link rel="stylesheet" href="publics/styles/main.css">
+
     <?php 
         switch($title)
         {
@@ -32,6 +34,7 @@
     ?>
     
     <link rel="stylesheet" href="publics/styles/<?php echo $style; ?>.css">
+    <link rel="stylesheet" href="publics/styles/mediaqueries.css">
     <title>Bella_Ciào | <?php echo $title ?></title>
 </head>
 <body>

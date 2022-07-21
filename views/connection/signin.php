@@ -17,7 +17,7 @@
         <div>
             <label for="password">Mot de passe</label>
             <input type="password" name="password" id="password">
-            <a href="index.php?page=forgotPassword">Mot de passe oublié ?</a>
+            <a href="index.php?page=forgotPassword" class="forgotPassword">Mot de passe oublié ?</a>
         </div>
 
         <button>Se connecter</button>

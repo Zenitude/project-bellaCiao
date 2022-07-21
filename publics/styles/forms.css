@@ -25,6 +25,7 @@ form div
     justify-content: center;
     align-items: center;
     width: 50%;
+    min-width: 280px;
 }
 
 form div a
@@ -37,6 +38,7 @@ form div a
 form label, input
 {
     width: 100%;
+    min-width: 280px;
     margin: 5px 0;
 }
 
@@ -48,8 +50,22 @@ form input
     border: 1px outset var(--secondary);
 }
 
+form textarea
+{
+    min-width: 280px;
+    width: 100%;
+    border-radius: 40px;
+    min-height: 100px;
+    height: 200px;
+    border: 1px outset var(--secondary);
+    margin: 5px 0;
+    resize: none;
+    padding: 15px;
+}
+
 form button
 {
+    min-width: 280px;
     width: 50%;
     height: 35px;
     margin-top: 5px;
@@ -108,7 +124,7 @@ form button:active, .signOr a:active
 .signOr a
 {
     width: 50%;
-    min-width: 150px;
+    min-width: 280px;
     height: 35px;
     display: flex;
     justify-content: center;
@@ -128,4 +144,12 @@ form button:active, .signOr a:active
 .autoBody
 {
     height: auto;
+}
+
+.forgotPassword
+{
+    width: 100%;
+    min-width: 280px;
+    align-self: baseline;
+    text-align: end;
 }

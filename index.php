@@ -19,7 +19,22 @@ if(isset($_GET['page']))
     }
     elseif($_GET['page'] == 'contact')
     {
-        contact();
+        if(isset($_GET['action']))
+        {
+            if($_GET['action'] == 'send')
+            {
+                sendMessage();
+            }
+            else
+            {
+                contact();
+            }
+        }
+        else
+        {
+            contact();
+        }
+        
     }
     else
     {
