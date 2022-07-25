@@ -1,6 +1,6 @@
 <?php 
+    if(isset($_SESSION['nameUser'])) { header('Location:index.php?page=home'); }
     $title = 'Connexion';
-
     ob_start();
 ?>
 

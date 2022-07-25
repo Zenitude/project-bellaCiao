@@ -7,7 +7,33 @@ if(isset($_GET['page']))
 {
     if($_GET['page'] == 'signUp')
     {
-        signUp();
+        if(isset($_GET['action']))
+        {
+            if($_GET['action'] == 'signUp-selectSociety')
+            {
+                signUpStart();
+            }
+            elseif($_GET['action'] == 'signUp-society')
+            {
+                signUpSociety();
+            }
+            elseif($_GET['action'] == 'signUp-user')
+            {
+                signUpUser();
+            }
+            elseif($_GET['action'] == 'signUp-end')
+            {
+                signUpEnd();   
+            }
+            else
+            {
+                signUpStart();
+            }
+        }
+        else
+        {
+            signUpStart();
+        }
     }
     elseif($_GET['page'] == 'signIn')
     {
@@ -35,6 +61,10 @@ if(isset($_GET['page']))
             contact();
         }
         
+    }
+    elseif($_GET['page'] == 'home')
+    {
+        home();
     }
     else
     {
